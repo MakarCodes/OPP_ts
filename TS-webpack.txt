@@ -1,0 +1,29 @@
+npm install -g typescript -> install ts comiplator globally
+
+tsc --init -> create TS config file
+
+npm init -y -> init package JSON
+
+npm install webpack webpack-cli ts-loader -D
+
+webpack - bundle
+webpack-cli - to work from command line
+ts-loader - how to complie ts to js
+
+npm install typescript -D - add as dev dependencie
+
+const path = require('path');
+path: path.resolve(__dirname, 'public'), -> absolute path, resolve is a method, 
+                                             that take current directory dirname (specific file) 
+                                             folder/file and provide path to root folder/file name 'public' 
+
+npm install webpack-dev-server -D - dev live server to see live changes in browser - local host server
+
+DEV - only recomplie code and store it in memory
+BUILD - takes recompiled code and bundle it
+
+ output: {
+    publicPath: 'public', -> where from take .js file to serve on local host
+    filename: 'bundle.js', -> file to which code is bundled
+    path: path.resolve(__dirname, 'public'), -> absolute path of the directory where bundled code should be
+  },
