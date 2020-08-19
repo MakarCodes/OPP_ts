@@ -39,6 +39,25 @@ form.addEventListener('submit', e => {
   console.log(contacts);
 });
 
+// PONIŻSZE DWA BEZ DZIEDZICZENIA ?
+
+// Obiekt charakteryzujący grupę kontaktów:
+class Group {
+  // Ma mieć: listę kontaktów oraz nazwę grupy oraz uuid
+  // Ma umożliwiać: zmianę nazwy grupy, można dodać lub usunac kontakt z grupy, można sprawdzić czy kontakt istnieje w grupie
+  // do constructora -> array z kontaktami, nazwa grup, id
+  // changeGroupNameHandler
+  // addContact
+  //removeContact
+  //checkIfContactIsInGroup -> filter through id
+}
+
+// Obiekt charakteryzujący książke adresową
+class AddressBook {
+  // Ma mieć: listę wszystkich kontaktów, listę grup kontaktów
+  // Ma umożliwiać: szukanie kontaktu po frazie, dodawanie/usuwanie/modyfikacje nowych kontaktów, dodawanie/usuwanie/modyfikacje nowych grup
+}
+
 // public - default can be change insout/outside and read
 // private - it cannot be accessed from outside of its containing class - can be change by methods of the containing class
 // protected - like private but can be accessed within deriving classes (subclasses)
